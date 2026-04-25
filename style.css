@@ -5,7 +5,7 @@
 
 @font-face {
     font-family: 'octo';
-    src: url('fonts/octo.ttf') format('truetype');
+    src: url('fonts/octo.otf') format('truetype');
 }
 
 body {

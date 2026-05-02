@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'OctoFont';
+    src: url('fonts/octofont.ttf') format('truetype');
+}
+
 /* Reset e Configurações Gerais */
 * {
     margin: 0;
@@ -11,7 +16,7 @@ html {
 
 body {
     background: #000000;
-    font-family: 'VT323', monospace; /* Fonte de terminal para o texto */
+    font-family: 'OctoFont', monospace;
     color: #ff944d;
     line-height: 1.4;
     overflow-x: hidden;
@@ -26,7 +31,7 @@ header {
 }
 
 header h1 {
-    font-family: 'Press Start 2P', cursive;
+    font-family: 'OctoFont', monospace;
     font-size: clamp(24px, 6vw, 50px);
     color: #ff6a00;
     text-shadow: 0 0 20px rgba(255, 106, 0, 0.7);
@@ -34,11 +39,13 @@ header h1 {
 }
 
 header h3 {
+    font-family: 'OctoFont', monospace;
     color: #ff944d;
     font-size: 1.1rem;
     letter-spacing: 2px;
 }
 
+/* Navegação */
 nav {
     display: flex;
     justify-content: center;
@@ -47,7 +54,7 @@ nav {
 }
 
 nav a {
-    font-family: 'Press Start 2P', cursive;
+    font-family: 'OctoFont', monospace;
     font-size: 10px;
     color: #cccccc;
     text-decoration: none;
@@ -80,7 +87,7 @@ section:hover {
 }
 
 h2 {
-    font-family: 'Press Start 2P', cursive;
+    font-family: 'OctoFont', monospace;
     font-size: 18px;
     color: #ff6a00;
     margin-bottom: 25px;
@@ -92,7 +99,7 @@ p {
     margin-bottom: 20px;
 }
 
-/* Container de Habilidades (Estilo Inventário) */
+/* Habilidades */
 .skills-container {
     display: flex;
     flex-wrap: wrap;
@@ -116,7 +123,7 @@ p {
     box-shadow: 0 0 15px #ff6a00;
 }
 
-/* Links de Contato */
+/* Contato */
 .links-contato {
     display: flex;
     flex-wrap: wrap;
@@ -124,6 +131,7 @@ p {
 }
 
 .links-contato a {
+    font-family: 'OctoFont', monospace;
     color: #fff;
     text-decoration: none;
     border-bottom: 2px solid #ff6a00;
@@ -144,7 +152,7 @@ footer {
     font-size: 0.9rem;
 }
 
-/* Ajustes para Celular */
+/* Responsivo */
 @media (max-width: 600px) {
     section {
         padding: 25px;
